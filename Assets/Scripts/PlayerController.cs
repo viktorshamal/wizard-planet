@@ -15,6 +15,7 @@ public class PlayerController : NetworkBehaviour
         if (isLocalPlayer)
         {
             Camera.main.transform.parent = transform;
+            Camera.main.transform.localPosition = new Vector3(0, 10, -18);
         }
     }
     void Update()
